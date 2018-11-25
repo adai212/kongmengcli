@@ -1,0 +1,4 @@
+/node_modules
+/mycli
+/testcli
+*.log
