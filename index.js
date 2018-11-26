@@ -20,7 +20,7 @@ program
 program
     .command('* <from> <to>')
     //copy files from github
-    .option('kongmengcli templatecli testcli', 'copy files from templatecli to testcli')
+    .option('kongmengcli githubcli testcli', 'copy files from githubcli to testcli')
     .action(function (from, to) {
         log.info('start work...');
         if (from && to) {
@@ -35,7 +35,7 @@ program
                 log.info('done')
             })
         } else {
-            log.error('example: kongmengcli templatecli testcli')
+            log.error('example: kongmengcli githubcli testcli')
         }
     })
 program.parse(process.argv)
